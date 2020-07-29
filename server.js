@@ -17,11 +17,17 @@ app.use(BodyParser.json()); //using bodyparser middleware for data handling
 app.use(ErrorHandler()); //using errorhandler middleware for user friendly error messages
 
 //routes
-//POSTS
-app.get("/posts", (req, res) => routes.posts.getPosts(req, res));
-app.post("/posts", (req, res) => routes.posts.addPost(req, res));
-app.put("/posts/:postID", (req, res) => routes.posts.updatePost(req, res));
-app.delete("/posts/:postID", (req, res) => routes.posts.deletePost(req, res));
+//*POSTS
+app.get("/posts", routes.posts.getPosts);
+app.post("/posts", routes.posts.addPost);
+app.put("/posts/:postID", routes.posts.updatePost);
+app.delete("/posts/:postID", routes.posts.deletePost);
+//*COMMENTS
+app.get("/posts/:postID/comments", routes.comments.getComments);
+app.post("/posts/:postID/comments", routes.comments.addComment);
+app.put("/posts/:postID/comments/:commentID", routes.comments.updateComment);
+app.delete("/posts/:postID/comments/:commentID", routes.comments.deleteComment);
+
 //error handling
 
 //server boot
