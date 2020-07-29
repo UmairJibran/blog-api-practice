@@ -1,30 +1,30 @@
 {
-  "name": "blog-api-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UmairJibran/blog-api-practice.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/UmairJibran/blog-api-practice/issues"
-  },
-  "homepage": "https://github.com/UmairJibran/blog-api-practice#readme",
-  "dependencies": {
-    "body-parser": "1.19.0",
-    "errorhandler": "1.5.1",
-    "express": "4.17.1",
-    "morgan": "1.10.0"
-  },
-  "devDependencies": {
-    "node-dev": "5.1.0"
-  }
+   "name": "blog-api-practice",
+   "version": "1.0.0",
+   "description": "",
+   "main": "server.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "./node_modules/.bin/node-dev server.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/UmairJibran/blog-api-practice.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/UmairJibran/blog-api-practice/issues"
+   },
+   "homepage": "https://github.com/UmairJibran/blog-api-practice#readme",
+   "dependencies": {
+      "body-parser": "1.19.0",
+      "errorhandler": "1.5.1",
+      "express": "4.17.1",
+      "morgan": "1.10.0"
+   },
+   "devDependencies": {
+      "node-dev": "5.1.0"
+   }
 }
